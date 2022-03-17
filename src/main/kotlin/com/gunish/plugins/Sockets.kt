@@ -19,7 +19,7 @@ fun Application.configureSockets() {
     routing {
         webSocket("/") { // websocketSession
             for (frame in incoming) {
-                when (frame) {
+                 when (frame) {
                     is Frame.Text -> {
                         val text = frame.readText()
                         outgoing.send(Frame.Text("YOU SAID: $text"))

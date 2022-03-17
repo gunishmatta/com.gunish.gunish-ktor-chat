@@ -1,0 +1,1 @@
+rootProject.name = "com.gunish.gunish-ktor-chat"
